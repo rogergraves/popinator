@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154E41921959E219000C3E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E41911959E219000C3E6D /* AppDelegate.swift */; };
+		154E41941959E219000C3E6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154E41931959E219000C3E6D /* Images.xcassets */; };
+		154E41A01959E219000C3E6D /* PopinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E419F1959E219000C3E6D /* PopinatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		154E419A1959E219000C3E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 154E41841959E219000C3E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154E418B1959E219000C3E6D;
+			remoteInfo = Popinator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		154E418C1959E219000C3E6D /* Popinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		154E41901959E219000C3E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154E41911959E219000C3E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		154E41931959E219000C3E6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		154E41991959E219000C3E6D /* PopinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		154E419E1959E219000C3E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154E419F1959E219000C3E6D /* PopinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopinatorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154E41891959E219000C3E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154E41961959E219000C3E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154E41831959E219000C3E6D = {
+			isa = PBXGroup;
+			children = (
+				154E418E1959E219000C3E6D /* Popinator */,
+				154E419C1959E219000C3E6D /* PopinatorTests */,
+				154E418D1959E219000C3E6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		154E418D1959E219000C3E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				154E418C1959E219000C3E6D /* Popinator.app */,
+				154E41991959E219000C3E6D /* PopinatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		154E418E1959E219000C3E6D /* Popinator */ = {
+			isa = PBXGroup;
+			children = (
+				154E41911959E219000C3E6D /* AppDelegate.swift */,
+				154E41931959E219000C3E6D /* Images.xcassets */,
+				154E418F1959E219000C3E6D /* Supporting Files */,
+			);
+			path = Popinator;
+			sourceTree = "<group>";
+		};
+		154E418F1959E219000C3E6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				154E41901959E219000C3E6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		154E419C1959E219000C3E6D /* PopinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				154E419F1959E219000C3E6D /* PopinatorTests.swift */,
+				154E419D1959E219000C3E6D /* Supporting Files */,
+			);
+			path = PopinatorTests;
+			sourceTree = "<group>";
+		};
+		154E419D1959E219000C3E6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				154E419E1959E219000C3E6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		154E418B1959E219000C3E6D /* Popinator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154E41A31959E219000C3E6D /* Build configuration list for PBXNativeTarget "Popinator" */;
+			buildPhases = (
+				154E41881959E219000C3E6D /* Sources */,
+				154E41891959E219000C3E6D /* Frameworks */,
+				154E418A1959E219000C3E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Popinator;
+			productName = Popinator;
+			productReference = 154E418C1959E219000C3E6D /* Popinator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		154E41981959E219000C3E6D /* PopinatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154E41A61959E219000C3E6D /* Build configuration list for PBXNativeTarget "PopinatorTests" */;
+			buildPhases = (
+				154E41951959E219000C3E6D /* Sources */,
+				154E41961959E219000C3E6D /* Frameworks */,
+				154E41971959E219000C3E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154E419B1959E219000C3E6D /* PBXTargetDependency */,
+			);
+			name = PopinatorTests;
+			productName = PopinatorTests;
+			productReference = 154E41991959E219000C3E6D /* PopinatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		154E41841959E219000C3E6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Wahanegi, Inc";
+				TargetAttributes = {
+					154E418B1959E219000C3E6D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					154E41981959E219000C3E6D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 154E418B1959E219000C3E6D;
+					};
+				};
+			};
+			buildConfigurationList = 154E41871959E219000C3E6D /* Build configuration list for PBXProject "Popinator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 154E41831959E219000C3E6D;
+			productRefGroup = 154E418D1959E219000C3E6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				154E418B1959E219000C3E6D /* Popinator */,
+				154E41981959E219000C3E6D /* PopinatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		154E418A1959E219000C3E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154E41941959E219000C3E6D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154E41971959E219000C3E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		154E41881959E219000C3E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154E41921959E219000C3E6D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154E41951959E219000C3E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154E41A01959E219000C3E6D /* PopinatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		154E419B1959E219000C3E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154E418B1959E219000C3E6D /* Popinator */;
+			targetProxy = 154E419A1959E219000C3E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		154E41A11959E219000C3E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		154E41A21959E219000C3E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		154E41A41959E219000C3E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Popinator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		154E41A51959E219000C3E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Popinator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		154E41A71959E219000C3E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Popinator.app/Popinator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PopinatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		154E41A81959E219000C3E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Popinator.app/Popinator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PopinatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		154E41871959E219000C3E6D /* Build configuration list for PBXProject "Popinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154E41A11959E219000C3E6D /* Debug */,
+				154E41A21959E219000C3E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154E41A31959E219000C3E6D /* Build configuration list for PBXNativeTarget "Popinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154E41A41959E219000C3E6D /* Debug */,
+				154E41A51959E219000C3E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		154E41A61959E219000C3E6D /* Build configuration list for PBXNativeTarget "PopinatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154E41A71959E219000C3E6D /* Debug */,
+				154E41A81959E219000C3E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 154E41841959E219000C3E6D /* Project object */;
+}
