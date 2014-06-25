@@ -14,12 +14,12 @@ class NewDecisionViewController: UIViewController {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Custom initialization
 //    }
-    var imageView:UIImageView = UIImageView();
-    
+
+    var textField: UITextField = UITextField();
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         // Do any additional setup after loading the view.
     }
 
@@ -27,7 +27,6 @@ class NewDecisionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // #pragma mark - Navigation
@@ -38,6 +37,11 @@ class NewDecisionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func choiceOne(sender: UIButton) {
+        textField.text = sender.currentTitle
+    }
+    
     
 
 }
