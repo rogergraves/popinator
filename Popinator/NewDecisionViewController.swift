@@ -14,10 +14,12 @@ class NewDecisionViewController: UIViewController {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Custom initialization
 //    }
-
+    var imageView:UIImageView = UIImageView();
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -36,5 +38,6 @@ class NewDecisionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
