@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="Cx0-9u-XRj">
             <objects>
-                <viewController id="UTS-UQ-4rq" sceneMemberID="viewController">
+                <viewController id="UTS-UQ-4rq" customClass="StartViewController" customModule="Popinator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rUL-pv-Wq9"/>
                         <viewControllerLayoutGuide type="bottom" id="qmD-7v-b58"/>
@@ -27,6 +27,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wFD-l6-dbP" kind="modal" id="eu2-0q-rBD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +38,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqI-l6-ib4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="241" y="380"/>
+        </scene>
+        <!--New Decision View Controller - What is your decision?-->
+        <scene sceneID="G6e-4z-DzA">
+            <objects>
+                <viewController id="9a9-ly-1ym" customClass="NewDecisionViewController" customModule="Popinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gKC-IT-Qdh"/>
+                        <viewControllerLayoutGuide type="bottom" id="8JF-Fq-LuE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g3S-6Y-xHR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-XX-TnZ">
+                                <rect key="frame" x="73" y="108" width="175" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="What is your decision?" id="jpU-43-CYg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kIR-vP-2yz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="CR5-zT-hlS"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpY-LV-OuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="380"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xDH-VK-kbN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wFD-l6-dbP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="giJ-lG-dVX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9a9-ly-1ym" kind="relationship" relationship="rootViewController" id="OER-Si-dmX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeV-AZ-XuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="380"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
