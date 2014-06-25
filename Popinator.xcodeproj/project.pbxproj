@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1526F3B6195A9798009165E9 /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526F3B5195A9798009165E9 /* Decision.swift */; };
 		154E41921959E219000C3E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E41911959E219000C3E6D /* AppDelegate.swift */; };
 		154E41941959E219000C3E6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154E41931959E219000C3E6D /* Images.xcassets */; };
 		154E41A01959E219000C3E6D /* PopinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E419F1959E219000C3E6D /* PopinatorTests.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1526F3B5195A9798009165E9 /* Decision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
 		154E418C1959E219000C3E6D /* Popinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		154E41901959E219000C3E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		154E41911959E219000C3E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				154E41BB195A4E5C000C3E6D /* StartViewController.h */,
 				154E41B9195A2D10000C3E6D /* Main.storyboard */,
+				1526F3B5195A9798009165E9 /* Decision.swift */,
 				154E41911959E219000C3E6D /* AppDelegate.swift */,
 				154E41931959E219000C3E6D /* Images.xcassets */,
 				154E418F1959E219000C3E6D /* Supporting Files */,
@@ -216,6 +219,7 @@
 				154E41921959E219000C3E6D /* AppDelegate.swift in Sources */,
 				154E41B6195A2125000C3E6D /* StartViewController.swift in Sources */,
 				154E41B8195A272F000C3E6D /* NewDecisionViewController.swift in Sources */,
+				1526F3B6195A9798009165E9 /* Decision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

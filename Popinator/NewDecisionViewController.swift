@@ -15,8 +15,12 @@ class NewDecisionViewController: UIViewController {
         // Custom initialization
 //    }
 
+    @IBOutlet var doneButton : UIBarButtonItem
+    var newDeciscion = Decision(name:"")
     var textField: UITextField = UITextField();
     
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -26,6 +30,20 @@ class NewDecisionViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        println("in prepare")
+        println("sender: \(sender)")
+        if sender as? NSObject != self.doneButton{
+            println("in not doneButton")
+            return
+        }
+        if self.textField.text.utf16count > 0{
+            println("in textfield > 0")
+            self.newDeciscion = Decision(name: self.textField.text)
+        }
+        println("new decision: \(newDeciscion.decisionTitle)")
     }
 
     /*
