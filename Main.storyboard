@@ -7,7 +7,7 @@
         <!--Start View Controller-->
         <scene sceneID="Cx0-9u-XRj">
             <objects>
-                <viewController id="UTS-UQ-4rq" customClass="StartViewController" customModule="Popinator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UTS-UQ-4rq" customClass="StartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rUL-pv-Wq9"/>
                         <viewControllerLayoutGuide type="bottom" id="qmD-7v-b58"/>
@@ -31,6 +31,9 @@
                                     <segue destination="wFD-l6-dbP" kind="modal" id="eu2-0q-rBD"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloverpop_logo_round_40x40" translatesAutoresizingMaskIntoConstraints="NO" id="hbU-f6-iq3">
+                                <rect key="frame" x="72" y="74" width="40" height="40"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -60,11 +63,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="What is your decision?" id="jpU-43-CYg">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kIR-vP-2yz"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="CR5-zT-hlS"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kIR-vP-2yz">
+                            <connections>
+                                <segue destination="OXz-6d-Axx" kind="unwind" unwindAction="unwindToStart:" id="oUn-k3-Kzq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="CR5-zT-hlS">
+                            <connections>
+                                <segue destination="OXz-6d-Axx" kind="unwind" unwindAction="unwindToStart:" id="KJj-c3-FS5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IpY-LV-OuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OXz-6d-Axx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1191" y="380"/>
         </scene>
@@ -87,6 +99,9 @@
             <point key="canvasLocation" x="659" y="380"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloverpop_logo_round_40x40" width="40" height="40"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

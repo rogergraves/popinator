@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+@objc(StartViewController) class StartViewController: UIViewController {
 
     
 
@@ -22,6 +22,13 @@ class StartViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func unwindToStart(segue: UIStoryboardSegue){
+        println("in here");
+    }
+    
+    
+    
     
 
     /*
