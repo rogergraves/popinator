@@ -11,6 +11,8 @@ import UIKit
 class PicksViewController: UIViewController {
 
     var addButton: UIButton = UIButton()
+    var pick1: UILabel = UILabel()
+    var pickTextField: UITextField = UITextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,5 +38,10 @@ class PicksViewController: UIViewController {
 
     @IBAction func editingNewPickTextField(sender: UITextField) {
         self.addButton.enabled = sender.text.utf16count > 0
+    }
+    @IBAction func clickAddNewPickButton() {
+        pick1.text = pickTextField.text
+        pickTextField.text = ""
+        
     }
 }

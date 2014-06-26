@@ -185,12 +185,26 @@
                                 <state key="normal" title="Add">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickAddNewPickButton" destination="1yf-dM-jfo" eventType="touchUpInside" id="N5j-YQ-f4v"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf4-Xk-geN">
+                                <rect key="frame" x="20" y="166" width="280" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="addButton" destination="p5D-8d-Imn" id="ecy-Ut-KZj"/>
+                        <outlet property="pick1" destination="Xf4-Xk-geN" id="Jm1-dK-LtM"/>
+                        <outlet property="pickTextField" destination="1v7-gh-X26" id="wCk-Yn-afW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SlV-GA-Pwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,23 +228,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeV-AZ-XuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="607" y="380"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="NIW-KV-l4f">
-            <objects>
-                <viewController id="YO6-ko-AyP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oF1-gp-WgJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="i23-mE-9qW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HLp-pa-8eZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m9W-Dj-CUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
