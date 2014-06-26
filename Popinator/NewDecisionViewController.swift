@@ -15,10 +15,10 @@ class NewDecisionViewController: UIViewController {
         // Custom initialization
 //    }
 
-    @IBOutlet var doneButton : UIBarButtonItem
+    @IBOutlet var nextButton : UIBarButtonItem
     var newDeciscion = Decision(name:"")
     var textField: UITextField = UITextField();
-    
+
     
 
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class NewDecisionViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         println("in prepare")
         println("sender: \(sender)")
-        if sender as? NSObject != self.doneButton{
+        if sender as? NSObject != self.nextButton{
             println("in not doneButton")
             return
         }
@@ -58,8 +58,13 @@ class NewDecisionViewController: UIViewController {
     
     @IBAction func choiceOne(sender: UIButton) {
         textField.text = sender.currentTitle
+        nextButton.enabled = true
     }
     
     
+    @IBAction func editingTextField(sender: UITextField) {
+        nextButton.enabled = sender.text.utf16count > 0
+        
+    }
 
 }
