@@ -145,7 +145,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="CR5-zT-hlS">
                             <connections>
-                                <segue destination="1yf-dM-jfo" kind="modal" id="qTa-Cc-9Bu"/>
+                                <segue destination="ZjC-Ua-osV" kind="modal" id="49s-e5-kj1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -159,57 +159,34 @@
             </objects>
             <point key="canvasLocation" x="977" y="380"/>
         </scene>
-        <!--Picks View Controller-->
-        <scene sceneID="Ug3-cf-u9P">
+        <!--Pick Table View Controller-->
+        <scene sceneID="sN4-Yh-XER">
             <objects>
-                <viewController id="1yf-dM-jfo" customClass="PicksViewController" customModule="Popinator" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xhh-au-buB"/>
-                        <viewControllerLayoutGuide type="bottom" id="YTc-Fx-JMh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HEH-E4-r20">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <tableViewController id="ZjC-Ua-osV" customClass="PickTableViewController" customModule="Popinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="458-bZ-Xhn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new pick" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1v7-gh-X26">
-                                <rect key="frame" x="20" y="114" width="236" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="editingNewPickTextField:" destination="1yf-dM-jfo" eventType="editingChanged" id="uku-ou-oWN"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5D-8d-Imn">
-                                <rect key="frame" x="264" y="114" width="36" height="30"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickAddNewPickButton" destination="1yf-dM-jfo" eventType="touchUpInside" id="N5j-YQ-f4v"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf4-Xk-geN">
-                                <rect key="frame" x="20" y="166" width="280" height="21"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="addButton" destination="p5D-8d-Imn" id="ecy-Ut-KZj"/>
-                        <outlet property="pick1" destination="Xf4-Xk-geN" id="Jm1-dK-LtM"/>
-                        <outlet property="pickTextField" destination="1v7-gh-X26" id="wCk-Yn-afW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SlV-GA-Pwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="19" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="44" id="8Db-Bd-iiO">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Db-Bd-iiO" id="1i7-Fw-htt">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZjC-Ua-osV" id="oMu-Jk-rEd"/>
+                            <outlet property="delegate" destination="ZjC-Ua-osV" id="DKM-0d-JFb"/>
+                        </connections>
+                    </tableView>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <size key="freeformSize" width="320" height="567"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUm-dP-x8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1325" y="379"/>
+            <point key="canvasLocation" x="1337" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xDH-VK-kbN">

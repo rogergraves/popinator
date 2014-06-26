@@ -14,7 +14,7 @@
 		154E41B6195A2125000C3E6D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E41B5195A2125000C3E6D /* StartViewController.swift */; };
 		154E41B8195A272F000C3E6D /* NewDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E41B7195A272F000C3E6D /* NewDecisionViewController.swift */; };
 		154E41BA195A2D10000C3E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154E41B9195A2D10000C3E6D /* Main.storyboard */; };
-		4E3629C0195BDE430086C886 /* PicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3629BF195BDE430086C886 /* PicksViewController.swift */; };
+		4EA4DDB3195CAE6F0028FE55 /* PickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DDB2195CAE6F0028FE55 /* PickTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 		154E41B7195A272F000C3E6D /* NewDecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDecisionViewController.swift; sourceTree = "<group>"; };
 		154E41B9195A2D10000C3E6D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		154E41BB195A4E5C000C3E6D /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = ../StartViewController.h; sourceTree = "<group>"; };
-		4E3629BF195BDE430086C886 /* PicksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicksViewController.swift; sourceTree = "<group>"; };
+		4EA4DDB2195CAE6F0028FE55 /* PickTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickTableViewController.swift; path = ../PickTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,7 @@
 		154E418E1959E219000C3E6D /* Popinator */ = {
 			isa = PBXGroup;
 			children = (
+				4EA4DDB2195CAE6F0028FE55 /* PickTableViewController.swift */,
 				154E41BB195A4E5C000C3E6D /* StartViewController.h */,
 				154E41B9195A2D10000C3E6D /* Main.storyboard */,
 				1526F3B5195A9798009165E9 /* Decision.swift */,
@@ -89,7 +90,6 @@
 				154E41931959E219000C3E6D /* Images.xcassets */,
 				154E418F1959E219000C3E6D /* Supporting Files */,
 				154E41B7195A272F000C3E6D /* NewDecisionViewController.swift */,
-				4E3629BF195BDE430086C886 /* PicksViewController.swift */,
 				154E41B5195A2125000C3E6D /* StartViewController.swift */,
 			);
 			path = Popinator;
@@ -221,8 +221,8 @@
 			files = (
 				154E41921959E219000C3E6D /* AppDelegate.swift in Sources */,
 				154E41B6195A2125000C3E6D /* StartViewController.swift in Sources */,
+				4EA4DDB3195CAE6F0028FE55 /* PickTableViewController.swift in Sources */,
 				154E41B8195A272F000C3E6D /* NewDecisionViewController.swift in Sources */,
-				4E3629C0195BDE430086C886 /* PicksViewController.swift in Sources */,
 				1526F3B6195A9798009165E9 /* Decision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
