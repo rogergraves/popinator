@@ -14,7 +14,9 @@
 		154E41B6195A2125000C3E6D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E41B5195A2125000C3E6D /* StartViewController.swift */; };
 		154E41B8195A272F000C3E6D /* NewDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E41B7195A272F000C3E6D /* NewDecisionViewController.swift */; };
 		154E41BA195A2D10000C3E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154E41B9195A2D10000C3E6D /* Main.storyboard */; };
-		4EA4DDB3195CAE6F0028FE55 /* PickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DDB2195CAE6F0028FE55 /* PickTableViewController.swift */; };
+		75532038196C51FA0022B829 /* OptionEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75532037196C51FA0022B829 /* OptionEnterViewController.swift */; };
+		75532039196C55D40022B829 /* PickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DDB2195CAE6F0028FE55 /* PickTableViewController.swift */; };
+		7553203C196C5B420022B829 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7553203A196C5B420022B829 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		154E41B9195A2D10000C3E6D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		154E41BB195A4E5C000C3E6D /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = ../StartViewController.h; sourceTree = "<group>"; };
 		4EA4DDB2195CAE6F0028FE55 /* PickTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickTableViewController.swift; path = ../PickTableViewController.swift; sourceTree = "<group>"; };
+		75532037196C51FA0022B829 /* OptionEnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionEnterViewController.swift; sourceTree = "<group>"; };
+		7553203B196C5B420022B829 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				154E418F1959E219000C3E6D /* Supporting Files */,
 				154E41B7195A272F000C3E6D /* NewDecisionViewController.swift */,
 				154E41B5195A2125000C3E6D /* StartViewController.swift */,
+				75532037196C51FA0022B829 /* OptionEnterViewController.swift */,
+				7553203A196C5B420022B829 /* Model.xcdatamodeld */,
 			);
 			path = Popinator;
 			sourceTree = "<group>";
@@ -219,10 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75532039196C55D40022B829 /* PickTableViewController.swift in Sources */,
 				154E41921959E219000C3E6D /* AppDelegate.swift in Sources */,
 				154E41B6195A2125000C3E6D /* StartViewController.swift in Sources */,
-				4EA4DDB3195CAE6F0028FE55 /* PickTableViewController.swift in Sources */,
+				7553203C196C5B420022B829 /* Model.xcdatamodeld in Sources */,
 				154E41B8195A272F000C3E6D /* NewDecisionViewController.swift in Sources */,
+				75532038196C51FA0022B829 /* OptionEnterViewController.swift in Sources */,
 				1526F3B6195A9798009165E9 /* Decision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +422,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7553203A196C5B420022B829 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7553203B196C5B420022B829 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7553203B196C5B420022B829 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 154E41841959E219000C3E6D /* Project object */;
 }

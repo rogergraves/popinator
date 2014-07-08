@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6172.15" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ToDoItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toBeDoneBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ToDoItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ToDoItem" positionX="-4691" positionY="-2157" width="128" height="73"/>
+        <element name="User" positionX="-4482" positionY="-2187" width="128" height="58"/>
+    </elements>
+</model>

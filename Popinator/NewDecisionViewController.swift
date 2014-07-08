@@ -23,6 +23,7 @@ class NewDecisionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem, target: self, action: )
     
         // Do any additional setup after loading the view.
     }
@@ -45,6 +46,7 @@ class NewDecisionViewController: UIViewController {
         }
         println("new decision: \(newDeciscion.decisionTitle)")
     }
+
 
     /*
     // #pragma mark - Navigation

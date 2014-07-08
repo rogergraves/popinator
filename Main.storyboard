@@ -145,7 +145,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="CR5-zT-hlS">
                             <connections>
-                                <segue destination="ZjC-Ua-osV" kind="modal" id="49s-e5-kj1"/>
+                                <segue destination="ZjC-Ua-osV" kind="push" id="49s-e5-kj1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -181,12 +181,56 @@
                             <outlet property="delegate" destination="ZjC-Ua-osV" id="DKM-0d-JFb"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="onO-rv-bES">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FOj-o2-2ZD">
+                            <connections>
+                                <segue destination="EZp-UP-EJ0" kind="modal" identifier="OptionEnterSegue" id="MHs-Cx-uK2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <size key="freeformSize" width="320" height="567"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUm-dP-x8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1337" y="379"/>
+        </scene>
+        <!--Option Enter View Controller-->
+        <scene sceneID="2U4-iu-Khp">
+            <objects>
+                <viewController id="EZp-UP-EJ0" customClass="OptionEnterViewController" customModule="Popinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SG8-2n-Flm"/>
+                        <viewControllerLayoutGuide type="bottom" id="e9b-dG-U6L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Eb-bV-9O3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter The Option" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQB-q9-Sm0">
+                                <rect key="frame" x="20" y="59" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Q-C1-38e">
+                                <rect key="frame" x="137" y="97" width="46" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="EZp-UP-EJ0" eventType="touchUpInside" id="SPU-2u-EwF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="PQB-q9-Sm0" id="Sac-OH-09i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsA-XH-g8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="380"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xDH-VK-kbN">

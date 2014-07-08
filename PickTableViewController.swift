@@ -73,6 +73,25 @@ class PickTableViewController: UITableViewController {
         }    
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if segue.identifier == "OptionEnterSegue"
+        {
+            var vc:OptionEnterViewController = segue.destinationViewController
+
+        }
+        
+        println("in prepare")
+        println("sender: \(sender)")
+        if sender as? NSObject != self.nextButton{
+            println("in not doneButton")
+            return
+        }
+        if self.textField.text.utf16count > 0{
+            println("in textfield > 0")
+            self.newDeciscion = Decision(name: self.textField.text)
+        }
+        println("new decision: \(newDeciscion.decisionTitle)")
+    }
     /*
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView?, moveRowAtIndexPath fromIndexPath: NSIndexPath?, toIndexPath: NSIndexPath?) {
